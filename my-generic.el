@@ -27,6 +27,21 @@
 ;; Enable windmove to quickly change switch buffers.
 (when (fboundp 'windmove-default-keybindings)
   (windmove-default-keybindings))
+(setq windmove-wrap-around t)
+
+;; whenever an external process changes a file underneath emacs, and there
+;; was no unsaved changes in the corresponding buffer, just revert its
+;; content to reflect what's on-disk.
+(global-auto-revert-mode 1)
+
+;; highlight current line
+(global-hl-line-mode)
+
+;; Enable display of time, load level, and mail flag in mode lines.
+(display-time)
+
+;; Enable cut-and-paste between Emacs and X clipboard.
+(setq x-select-enable-clipboard t)
 
 ;; Line-wrapping
 ;;(set-default 'fill-column 80)
