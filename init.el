@@ -41,6 +41,7 @@
  'color-theme-solarized
  'expand-region
  'find-file-in-project
+ 'idle-highlight-mode
  'js2-mode
 ;; 'magit ; wait for bugfix: https://github.com/magit/magit/issues/862
  'markdown-mode
