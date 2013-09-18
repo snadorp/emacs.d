@@ -64,6 +64,7 @@
 (add-to-list 'load-path "~/.emacs.d")
 (load "my-osx")
 (load "my-ido")
+(load "starter-kit-defuns")
 (load "my-functions")
 (load "my-generic")
 (load "my-keybindings")

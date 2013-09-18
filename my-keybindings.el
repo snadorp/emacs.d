@@ -16,6 +16,23 @@
 (global-set-key (kbd "C-c ,") 'ruby-test-run)
 (global-set-key (kbd "C-c M-,") 'ruby-test-run-at-point)
 
+;; magit
+(global-set-key (kbd "C-c g") 'magit-status)
+
+
 ;; global
 (global-set-key (kbd "C-x f") 'find-file-in-repository)
 (global-set-key (kbd "C-x h") 'mark-whole-buffer)
+(global-set-key (kbd "C-c n") 'esk-cleanup-buffer)   ;; Perform general cleanup.
+(global-set-key (kbd "C-c q") 'join-line)
+
+(define-key global-map (kbd "C-+") 'text-scale-increase)
+(define-key global-map (kbd "C--") 'text-scale-decrease)
+
+;; File finding
+(global-set-key (kbd "C-x M-f") 'ido-find-file-other-window)
+(global-set-key (kbd "C-c y") 'bury-buffer)
+(global-set-key (kbd "C-c r") 'revert-buffer)
+
+;; Help should search more than just commands
+(global-set-key (kbd "C-h a") 'apropos)
