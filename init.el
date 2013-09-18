@@ -41,7 +41,6 @@
  'color-theme-solarized
  'expand-region
  'find-file-in-project
-;; 'highlight-cl
  'js2-mode
 ;; 'magit ; wait for bugfix: https://github.com/magit/magit/issues/862
  'markdown-mode
@@ -50,7 +49,7 @@
  'nrepl
  'paredit
  'popwin
- 'projectile ;; DOKU LESEN
+ 'projectile ;; READ DOC
  'ruby-mode
  'ruby-test-mode
  'rvm
@@ -59,16 +58,15 @@
  'smex
  'smooth-scrolling
  'yaml-mode
-;; 'yasnippet-bundle
  )
 
-(add-to-list 'load-path "~/.emacs.d")
-
 ;; Personal customizations
+(add-to-list 'load-path "~/.emacs.d")
 (load "my-osx")
 (load "my-ido")
 (load "my-functions")
 (load "my-generic")
+(load "my-keybindings")
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
