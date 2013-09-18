@@ -18,7 +18,8 @@
 (setq column-number-mode  t)
 
 ;; Emacs gurus don't need no stinking scroll bars
-(toggle-scroll-bar -1)
+(if (fboundp 'scroll-bar-mode) (scroll-bar-mode -1))
+(if (fboundp 'tool-bar-mode) (tool-bar-mode -1))
 
 ;; Explicitly show the end of a buffer
 (set-default 'indicate-empty-lines t)
