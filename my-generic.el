@@ -23,6 +23,10 @@
 ;; Explicitly show the end of a buffer
 (set-default 'indicate-empty-lines t)
 
+;; Enable windmove to quickly change switch buffers.
+(when (fboundp 'windmove-default-keybindings)
+  (windmove-default-keybindings))
+
 ;; Line-wrapping
 ;;(set-default 'fill-column 80)
 
