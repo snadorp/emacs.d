@@ -1,3 +1,6 @@
 /el-get/*
 /el-get-init-files/*.elc
 /elpa/*
+/backups/*
+/auto-save-list/*
+/projectile-bookmarks.eld
