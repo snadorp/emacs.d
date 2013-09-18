@@ -7,3 +7,9 @@
       ido-max-prospects 10
       ido-use-filename-at-point 'guess
       ido-use-virtual-buffers t)
+
+;; Display ido results vertically, rather than horizontally
+(setq ido-decorations (quote ("\n-> " "" "\n   " "\n   ..." "[" "]" " [No match]" " [Matched]" " [Not readable]" " [Too big]" " [Confirm]")))
+
+(defun ido-disable-line-truncation () (set (make-local-variable 'truncate-lines) nil))
+(add-hook 'ido-minibuffer-setup-hook 'ido-disable-line-truncation)
