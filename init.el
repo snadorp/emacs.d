@@ -1,4 +1,4 @@
-;; Custom init file splitting it all up into split config files.
+;; Emacs init file.
 
 ;; Enable a backtrace when problems occur
 (setq debug-on-error t)
