@@ -6,13 +6,13 @@
 ;; Set the package sources.
 (setq package-archives
       '(
-	;;("elpa" . "http://tromey.com/elpa/")
-	;;("gnu" . "http://elpa.gnu.org/packages/")
+        ;;("elpa" . "http://tromey.com/elpa/")
+        ;;("gnu" . "http://elpa.gnu.org/packages/")
         ("marmalade" . "http://marmalade-repo.org/packages/")
         ))
 
 (setq elpa-packages
-     '(magit))
+      '(magit))
 
 ;; EL-GET
 
@@ -43,7 +43,7 @@
  'find-file-in-project
  'idle-highlight-mode
  'js2-mode
-;; 'magit ; wait for bugfix: https://github.com/magit/magit/issues/862
+ ;; 'magit ; wait for bugfix: https://github.com/magit/magit/issues/862
  'markdown-mode
  'multi-term
  'multiple-cursors
