@@ -19,6 +19,8 @@
 ;; magit
 (global-set-key (kbd "C-c g") 'magit-status)
 
+;; expand region
+(global-set-key (kbd "C-=") 'er/expand-region)
 
 ;; global
 (global-set-key (kbd "C-x f") 'find-file-in-repository)
