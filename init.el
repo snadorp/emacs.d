@@ -14,6 +14,11 @@
 (setq elpa-packages
       '(magit))
 
+(dolist (package elpa-packages)
+  (when (not (package-installed-p package))
+    (package-refresh-contents)
+    (package-install package)))
+
 ;; EL-GET
 
 (setq el-get-user-package-directory "~/.emacs.d/el-get-init-files")
@@ -68,6 +73,7 @@
 (load "starter-kit-defuns")
 (load "my-functions")
 (load "my-generic")
+(load "my-hooks")
 (load "my-keybindings")
 
 (require 'zone)
