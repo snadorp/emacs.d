@@ -70,7 +70,8 @@
 (load "my-generic")
 (load "my-keybindings")
 
-(zone-when-idle 60)
+(require 'zone)
+(zone-when-idle 120)
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
