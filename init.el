@@ -46,6 +46,8 @@
  'color-theme-solarized
  'expand-region
  'find-file-in-project
+ 'flymake
+ 'flymake-ruby
  'idle-highlight-mode
  'js2-mode
  ;; 'magit ; wait for bugfix: https://github.com/magit/magit/issues/862
