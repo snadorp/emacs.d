@@ -1,6 +1,9 @@
 ;; only run this stuff when using osx
 (when (eq system-type 'darwin)
-    ;; http://www.emacswiki.org/emacs/EmacsApp
+  ;; http://www.emacswiki.org/emacs/EmacsApp
+
+  ;; path madness when using OSX:
+  ;; http://stackoverflow.com/questions/2266905/emacs-is-ignoring-my-path-when-it-runs-a-compile-command
 
   ;; This variable describes the behavior of the command key.
   (setq mac-option-key-is-meta t)
