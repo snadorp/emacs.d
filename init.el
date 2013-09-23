@@ -45,6 +45,7 @@
  'clojure-mode
  'color-theme-solarized
  'expand-region
+ 'exec-path-from-shell
  'find-file-in-project
  'flymake
  'flymake-ruby
