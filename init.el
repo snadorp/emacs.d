@@ -76,6 +76,7 @@
 (load "starter-kit-defuns")
 (load "my-functions")
 (load "my-generic")
+(load "my-x60")
 (load "my-hooks")
 (load "my-keybindings")
 
