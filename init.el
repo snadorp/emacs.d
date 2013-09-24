@@ -44,14 +44,14 @@
  'auto-complete-yasnippet
  'clojure-mode
  'color-theme-solarized
- 'expand-region
  'exec-path-from-shell
+ 'expand-region
  'find-file-in-project
  'flymake
  'flymake-ruby
  'idle-highlight-mode
  'js2-mode
- ;; 'magit ; wait for bugfix: https://github.com/magit/magit/issues/862
+;; 'magit ; wait for bugfix: https://github.com/magit/magit/issues/862
  'markdown-mode
  'multi-term
  'multiple-cursors
@@ -59,6 +59,8 @@
  'paredit
  'popwin
  'projectile ;; READ DOC
+ 'rainbow-delimiters
+ 'rainbow-mode
  'ruby-mode
  'ruby-test-mode
  'rvm
