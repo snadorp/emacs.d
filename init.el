@@ -14,10 +14,10 @@
 (setq elpa-packages
       '(magit))
 
-(dolist (package elpa-packages)
-  (when (not (package-installed-p package))
-    (package-refresh-contents)
-    (package-install package)))
+;; (dolist (package elpa-packages)
+;;   (when (not (package-installed-p package))
+;;     (package-refresh-contents)
+;;     (package-install package)))
 
 ;; EL-GET
 
