@@ -23,7 +23,7 @@
 (global-set-key (kbd "C-=") 'er/expand-region)
 
 ;; global
-(global-set-key (kbd "C-x f") 'find-file-in-repository)
+(global-set-key (kbd "C-x f") 'projectile-find-file)
 (global-set-key (kbd "C-x h") 'mark-whole-buffer)
 (global-set-key (kbd "C-c n") 'esk-cleanup-buffer)   ;; Perform general cleanup.
 (global-set-key (kbd "C-c q") 'join-line)
