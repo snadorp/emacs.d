@@ -46,6 +46,9 @@
 ;; Line-wrapping
 ;;(set-default 'fill-column 80)
 
+;; Compilation output
+(setq compilation-scroll-output t)
+
 ;; Prevent the annoying beep on errors
 (setq visible-bell t)
 
