@@ -7,7 +7,6 @@
 
 ;; ido
 (global-set-key (kbd "C-x b") 'ido-switch-buffer)
-(global-set-key (kbd "C-x C-b") 'ibuffer)
 
 ;; clojure
 (global-set-key (kbd "C-c C-.") 'clojure-test-run-test)
@@ -22,12 +21,16 @@
 ;; expand region
 (global-set-key (kbd "C-=") 'er/expand-region)
 
-;; global
+;; projectile
 (global-set-key (kbd "C-x f") 'projectile-find-file)
+(global-set-key (kbd "C-x C-b") 'projectile-switch-to-buffer)
+(global-set-key (kbd "C-c C-p") 'projectile-switch-project)
+
+;; general
 (global-set-key (kbd "C-x h") 'mark-whole-buffer)
 (global-set-key (kbd "C-c n") 'esk-cleanup-buffer)   ;; Perform general cleanup.
 (global-set-key (kbd "C-c q") 'join-line)
-(global-set-key (kbd "RET") 'reindent-then-newline-and-indent)
+(global-set-key (kbd "RET") 'newline-and-indent)
 
 (global-set-key (kbd "C-+") 'text-scale-increase)
 (global-set-key (kbd "C--") 'text-scale-decrease)
