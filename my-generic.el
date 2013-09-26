@@ -46,6 +46,9 @@
 ;; Line-wrapping
 ;;(set-default 'fill-column 80)
 
+;; Get rid of annoying aut-fill-mode
+(auto-fill-mode -1)
+
 ;; Compilation output
 (setq compilation-scroll-output t)
 
