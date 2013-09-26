@@ -97,3 +97,14 @@
 
 ;; The maximum size in lines for term buffers.
 (setq term-buffer-maximum-size (* 10 2048))
+
+;;set the full path into frame title
+(setq frame-title-format
+  '(:eval
+    (if buffer-file-name
+        (replace-regexp-in-string
+         "\\\\" "/"
+         (replace-regexp-in-string
+          (regexp-quote (getenv "HOME")) "~"
+          (convert-standard-filename buffer-file-name)))
+      (buffer-name))))
