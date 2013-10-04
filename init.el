@@ -3,24 +3,6 @@
 ;; Enable a backtrace when problems occur
 (setq debug-on-error t)
 
-;; Set the package sources.
-(setq package-archives
-      '(
-        ;;("elpa" . "http://tromey.com/elpa/")
-        ;;("gnu" . "http://elpa.gnu.org/packages/")
-        ("marmalade" . "http://marmalade-repo.org/packages/")
-        ))
-
-(setq elpa-packages
-      '(magit))
-
-;; (dolist (package elpa-packages)
-;;   (when (not (package-installed-p package))
-;;     (package-refresh-contents)
-;;     (package-install package)))
-
-;; EL-GET
-
 (setq el-get-user-package-directory "~/.emacs.d/el-get-init-files")
 
 (add-to-list 'load-path "~/.emacs.d/el-get/el-get")
@@ -52,7 +34,7 @@
  'flymake-cursor
  'idle-highlight-mode
  'js2-mode
-;; 'magit ; wait for bugfix: https://github.com/magit/magit/issues/862
+ 'magit
  'markdown-mode
  'multi-term
  'multiple-cursors
