@@ -108,3 +108,6 @@
           (regexp-quote (getenv "HOME")) "~"
           (convert-standard-filename buffer-file-name)))
       (buffer-name))))
+
+(require 'uniquify)
+(setq uniquify-buffer-name-style 'forward)
