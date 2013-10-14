@@ -4,6 +4,7 @@
 
   ;; path madness when using OSX:
   ;; http://stackoverflow.com/questions/2266905/emacs-is-ignoring-my-path-when-it-runs-a-compile-command
+  ;; remove path_helper shit from /etc/zshenv
 
   ;; This variable describes the behavior of the command key.
   (setq mac-option-key-is-meta t)
