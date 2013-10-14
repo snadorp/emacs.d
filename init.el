@@ -26,6 +26,7 @@
  'auto-complete-yasnippet
  'clojure-mode
  'color-theme-solarized
+ 'elixir
  'exec-path-from-shell
  'expand-region
  'find-file-in-project
