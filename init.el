@@ -31,8 +31,9 @@
  'expand-region
  'find-file-in-project
  'flymake
- 'flymake-ruby
  'flymake-cursor
+ 'flymake-ruby
+ 'highlight-indentation
  'idle-highlight-mode
  'js2-mode
  'magit
