@@ -53,6 +53,7 @@
  'scss-mode
  'smex
  'smooth-scrolling
+ 'web-mode
  'yaml-mode
  )
 
