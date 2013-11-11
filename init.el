@@ -30,7 +30,6 @@
  'exec-path-from-shell
  'expand-region
  'find-file-in-project
- 'flx
  'flymake
  'flymake-cursor
  'flymake-ruby
