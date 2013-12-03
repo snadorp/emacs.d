@@ -98,6 +98,9 @@
 ;; The maximum size in lines for term buffers.
 (setq term-buffer-maximum-size (* 10 2048))
 
+;; delete seleted text when typing
+(delete-selection-mode 1)
+
 ;; always use spaces for indentation
 (setq-default indent-tabs-mode nil)
 
