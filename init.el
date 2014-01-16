@@ -50,6 +50,7 @@
  'ruby-test-mode
  'rvm
  'sass-mode
+ 'scala-mode2
  'scss-mode
  'smex
  'smooth-scrolling
