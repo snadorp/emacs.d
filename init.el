@@ -30,9 +30,7 @@
  'exec-path-from-shell
  'expand-region
  'find-file-in-project
- 'flymake
- 'flymake-cursor
- 'flymake-ruby
+ 'flycheck
  'highlight-indentation
  'idle-highlight-mode
  'js2-mode
