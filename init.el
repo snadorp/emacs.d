@@ -24,6 +24,7 @@
  'auto-complete-etags
  'auto-complete-ruby
  'auto-complete-yasnippet
+ 'cider
  'clojure-mode
  'color-theme-solarized
  'elixir
@@ -38,7 +39,6 @@
  'markdown-mode
  'multi-term
  'multiple-cursors
- 'nrepl
  'paredit
  'popwin
  'projectile ;; READ DOC
@@ -57,7 +57,7 @@
  )
 
 ;; Personal customizations
-(add-to-list 'load-path "~/.emacs.d")
+(add-to-list 'load-path "~/.emacs.d/custom")
 (load "my-osx")
 (load "my-ido")
 (load "starter-kit-defuns")
