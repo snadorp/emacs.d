@@ -17,6 +17,9 @@
 (setq line-number-mode    t)
 (setq column-number-mode  t)
 
+;; Enable winner-mode
+(winner-mode 1)
+
 ;; Emacs gurus don't need no stinking scroll bars
 (if (fboundp 'scroll-bar-mode) (scroll-bar-mode -1))
 (if (fboundp 'tool-bar-mode) (tool-bar-mode -1))
