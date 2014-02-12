@@ -81,3 +81,4 @@
  ;; If there is more than one, they won't work right.
  )
 (put 'upcase-region 'disabled nil)
+(message "Initialization done, have a nice day!")
