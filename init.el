@@ -40,6 +40,7 @@
  'multi-term
  'multiple-cursors
  'paredit
+ 'protobuf-mode
  'popwin
  'projectile ;; READ DOC
  'rainbow-delimiters
