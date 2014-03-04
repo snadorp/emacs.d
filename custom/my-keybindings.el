@@ -31,9 +31,13 @@
 (global-set-key (kbd "C-c n") 'esk-cleanup-buffer)   ;; Perform general cleanup.
 (global-set-key (kbd "C-c q") 'join-line)
 (global-set-key (kbd "RET") 'newline-and-indent)
+(global-set-key (kbd "C-RET") 'newline)
 
 (global-set-key (kbd "C-+") 'text-scale-increase)
 (global-set-key (kbd "C--") 'text-scale-decrease)
+
+;; Search cutomization
+(define-key isearch-mode-map (kbd "C-o") 'isearch-occur)
 
 ;; File finding
 (global-set-key (kbd "C-x M-f") 'ido-find-file-other-window)
