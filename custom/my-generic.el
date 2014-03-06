@@ -58,8 +58,15 @@
 ;; Prevent the annoying beep on errors
 (setq visible-bell t)
 
-;; Make sure all backup files only live in one place
-(setq backup-directory-alist '(("." . "~/.emacs.d/backups")))
+;; Make sure all backup and autosave files only live in one place
+;; Save all tempfiles in $TMPDIR/emacs$UID/
+(defconst emacs-tmp-dir (format "%s/%s%s/" temporary-file-directory "emacs" (user-uid)))
+(setq backup-directory-alist
+      `((".*" . ,emacs-tmp-dir)))
+(setq auto-save-file-name-transforms
+      `((".*" ,emacs-tmp-dir t)))
+(setq auto-save-list-file-prefix
+      emacs-tmp-dir)
 
 ;; Make backups for files under version control as well.
 (setq vc-make-backup-files t)
@@ -109,14 +116,14 @@
 
 ;;set the full path into frame title
 (setq frame-title-format
-  '(:eval
-    (if buffer-file-name
-        (replace-regexp-in-string
-         "\\\\" "/"
-         (replace-regexp-in-string
-          (regexp-quote (getenv "HOME")) "~"
-          (convert-standard-filename buffer-file-name)))
-      (buffer-name))))
+      '(:eval
+        (if buffer-file-name
+            (replace-regexp-in-string
+             "\\\\" "/"
+             (replace-regexp-in-string
+              (regexp-quote (getenv "HOME")) "~"
+              (convert-standard-filename buffer-file-name)))
+          (buffer-name))))
 
 (require 'uniquify)
 (setq uniquify-buffer-name-style 'forward)
