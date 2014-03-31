@@ -46,3 +46,7 @@
 
 ;; Help should search more than just commands
 (global-set-key (kbd "C-h a") 'apropos)
+
+;; Fix side scrolling
+(global-set-key [wheel-right] 'scroll-left)
+(global-set-key [wheel-left] 'scroll-right)

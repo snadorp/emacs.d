@@ -83,3 +83,4 @@
  )
 (put 'upcase-region 'disabled nil)
 (message "Initialization done, have a nice day!")
+(put 'scroll-left 'disabled nil)
