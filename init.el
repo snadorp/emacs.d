@@ -27,6 +27,7 @@
  'cider
  'clojure-mode
  'color-theme-solarized
+ 'ctags
  'elixir
  'exec-path-from-shell
  'expand-region
