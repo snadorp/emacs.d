@@ -41,6 +41,7 @@
  'markdown-mode
  'multi-term
  'multiple-cursors
+ 'nyan-mode
  'paredit
  'protobuf-mode
  'popwin
