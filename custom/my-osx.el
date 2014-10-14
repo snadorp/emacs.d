@@ -9,4 +9,5 @@
   ;; This variable describes the behavior of the command key.
   (setq mac-option-key-is-meta t)
   (setq mac-right-option-modifier nil)
-  (setq mac-allow-anti-aliasing t))
+  (setq mac-allow-anti-aliasing t)
+   '(mouse-wheel-scroll-amount (quote (0.01))))
