@@ -35,6 +35,7 @@
 
 (global-set-key (kbd "C-+") 'text-scale-increase)
 (global-set-key (kbd "C--") 'text-scale-decrease)
+(global-set-key (kbd "C-0") (lambda () (interactive)(text-scale-set 0)))
 
 ;; Search cutomization
 (define-key isearch-mode-map (kbd "C-o") 'isearch-occur)
