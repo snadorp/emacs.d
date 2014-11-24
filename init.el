@@ -33,7 +33,6 @@
  'expand-region
  'find-file-in-project
  'flycheck
- 'git-timemachine
  'highlight-indentation
  'idle-highlight-mode
  'js2-mode
