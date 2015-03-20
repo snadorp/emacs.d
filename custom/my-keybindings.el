@@ -1,3 +1,7 @@
+;;Disable miminmizing
+(global-set-key (kbd "C-z") nil)
+(global-set-key (kbd "C-x C-z") nil)
+
 ;; smex
 (global-set-key (kbd "M-X") 'smex-major-mode-commands)
 (global-set-key (kbd "M-x") 'smex)
