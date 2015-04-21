@@ -61,3 +61,16 @@
        (interactive)
        (switch-to-buffer (get-buffer-create "*scratch*"))
        (lisp-interaction-mode))
+
+(global-prettify-symbols-mode 1)
+(defun my-add-pretty-lambda ()
+  "make some word or string show as pretty Unicode symbols"
+  (setq prettify-symbols-alist
+        '(
+          ("lambda" . 955) ; λ
+          ("->" . 8594)    ; →
+          ("=>" . 8658)    ; ⇒
+;;          ("map" . 8614)   ; ↦
+          )))
+
+(add-hook 'prog-mode-hook 'my-add-pretty-lambda)
