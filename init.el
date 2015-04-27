@@ -24,12 +24,12 @@
  ;; 'auto-complete-etags
  ;; 'auto-complete-ruby
  ;; 'auto-complete-yasnippet
- 'company-mode
  'cider
  'clojure-mode
+ 'color-theme-almost-monokai
  'color-theme-solarized
+ 'company-mode
  'ctags
-;; 'elixir
  'exec-path-from-shell
  'expand-region
  'find-file-in-project
@@ -43,9 +43,9 @@
  'multiple-cursors
  'nyan-mode
  'paredit
- 'protobuf-mode
  'popwin
- 'projectile ;; READ DOC
+ 'projectile
+ 'protobuf-mode
  'rainbow-delimiters
  'rainbow-mode
  'ruby-mode
