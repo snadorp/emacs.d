@@ -9,3 +9,5 @@
 (add-hook 'ruby-mode-hook 'highlight-indentation-mode)
 (add-hook 'js-mode-hook 'highlight-indentation-mode)
 (add-hook 'js2-mode-hook 'highlight-indentation-mode)
+
+(add-hook 'java-mode-hook (lambda () (setq c-basic-offset 4)))
