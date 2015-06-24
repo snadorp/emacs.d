@@ -17,6 +17,12 @@
 
 (el-get
  'sync
+ 'exec-path-from-shell ;; has to executed first otherwise soem stuff
+                       ;; won't work on a mac
+ )
+
+(el-get
+ 'sync
  'ace-jump-mode
  ;; 'auto-complete
  ;; 'auto-complete-css
@@ -30,7 +36,6 @@
  'color-theme-solarized
  'company-mode
  'ctags
- 'exec-path-from-shell
  'expand-region
  'find-file-in-project
  'flycheck
