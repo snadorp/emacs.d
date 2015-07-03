@@ -2,6 +2,8 @@
 (global-set-key (kbd "C-z") nil)
 (global-set-key (kbd "C-x C-z") nil)
 
+;;Rectangle edit mode
+(global-set-key (kbd "M-SPC") 'rectangle-mark-mode)
 ;; smex
 (global-set-key (kbd "M-X") 'smex-major-mode-commands)
 (global-set-key (kbd "M-x") 'smex)
