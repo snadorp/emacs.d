@@ -116,6 +116,9 @@
 ;; always use spaces for indentation
 (setq-default indent-tabs-mode nil)
 
+;; disable auto-fill-mode
+(auto-fill-mode -1)
+
 ;;set the full path into frame title
 (setq frame-title-format
       '(:eval
