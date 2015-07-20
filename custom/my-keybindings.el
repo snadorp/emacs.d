@@ -9,7 +9,13 @@
 (global-set-key (kbd "M-x") 'smex)
 
 ;; ace jump
-(global-set-key (kbd "C-c SPC") 'ace-jump-mode)
+;;(global-set-key (kbd "C-c SPC") 'ace-jump-mode)
+
+(global-set-key (kbd "C-c j") 'avy-goto-word-or-subword-1)
+(global-set-key (kbd "s-.") 'avy-goto-word-or-subword-1)
+
+;; ace window
+(global-set-key (kbd "s-w") 'ace-window)
 
 ;; ido
 (global-set-key (kbd "C-x b") 'ido-switch-buffer)

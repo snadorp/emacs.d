@@ -23,7 +23,9 @@
 
 (el-get
  'sync
- 'ace-jump-mode
+ ;; 'ace-jump-mode ;; Ace is dead
+ 'ace-window
+ 'avy
  ;; 'auto-complete
  ;; 'auto-complete-css
  ;; 'auto-complete-emacs-lisp
