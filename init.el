@@ -15,11 +15,12 @@
       (goto-char (point-max))
       (eval-print-last-sexp))))
 
-(el-get
- 'sync
- 'exec-path-from-shell ;; has to executed first otherwise some stuff
-                       ;; won't work on a fresh mac clone
- )
+(when (eq system-type 'darwin)
+  (el-get
+   'sync
+   'exec-path-from-shell ;; has to executed first otherwise some stuff
+   ;; won't work on a fresh mac clone
+   ))
 
 (el-get
  'sync
@@ -31,6 +32,7 @@
  'color-theme-solarized
  'company-mode
  'ctags
+ 'ensime
  'expand-region
  'find-file-in-project
  'flycheck
@@ -54,6 +56,7 @@
  'ruby-test-mode
  'rvm
  'sass-mode
+ 'sbt-mode
  'scala-mode2
  'scss-mode
  'smex
@@ -63,10 +66,6 @@
  'yasnippet
  )
 
-(el-get
- 'sync
- 'sbt-mode
- 'ensime)
 
 ;; Personal customizations
 (add-to-list 'load-path "~/.emacs.d/custom")
