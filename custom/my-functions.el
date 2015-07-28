@@ -1,3 +1,17 @@
+;;; Custom utility functions
+
+(defun look-of-disapproval ()
+  (interactive)
+  (insert "ಠ_ಠ"))
+
+(defun flipping-table ()
+  (interactive)
+  (insert "(╯°□°)╯︵ ┻━┻"))
+
+(defun shrug ()
+  (interactive)
+  (insert "¯\\_(ツ)_/¯"))
+
 (defun swap-windows ()
   "Swap your windows."
   (interactive)
@@ -57,10 +71,10 @@
           (kill-buffer))))))
 
 (defun create-scratch-buffer nil
-       "create a scratch buffer"
-       (interactive)
-       (switch-to-buffer (get-buffer-create "*scratch*"))
-       (lisp-interaction-mode))
+  "create a scratch buffer"
+  (interactive)
+  (switch-to-buffer (get-buffer-create "*scratch*"))
+  (lisp-interaction-mode))
 
 (global-prettify-symbols-mode 1)
 (defun my-add-pretty-lambda ()
@@ -70,7 +84,7 @@
           ("lambda" . 955) ; λ
           ("->" . 8594)    ; →
           ("=>" . 8658)    ; ⇒
-;;          ("map" . 8614)   ; ↦
+          ;;          ("map" . 8614)   ; ↦
           )))
 
 (add-hook 'prog-mode-hook 'my-add-pretty-lambda)
