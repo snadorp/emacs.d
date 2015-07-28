@@ -17,21 +17,14 @@
 
 (el-get
  'sync
- 'exec-path-from-shell ;; has to executed first otherwise soem stuff
-                       ;; won't work on a mac
+ 'exec-path-from-shell ;; has to executed first otherwise some stuff
+                       ;; won't work on a fresh mac clone
  )
 
 (el-get
  'sync
- ;; 'ace-jump-mode ;; Ace is dead
  'ace-window
  'avy
- ;; 'auto-complete
- ;; 'auto-complete-css
- ;; 'auto-complete-emacs-lisp
- ;; 'auto-complete-etags
- ;; 'auto-complete-ruby
- ;; 'auto-complete-yasnippet
  'cider
  'clojure-mode
  'color-theme-almost-monokai
@@ -50,6 +43,7 @@
  'multi-term
  'multiple-cursors
  'nyan-mode
+ 'org-trello
  'paredit
  'popwin
  'projectile
